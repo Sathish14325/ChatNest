@@ -1,71 +1,54 @@
-# Chat Application
+# ChatNest  
 
----
+A Full Stack Chatting App that provides real-time communication between users. This application is built with modern web technologies and ensures secure data storage and transmission.  
 
-<p>
-  Chat refers to the process of communicating, interacting and/or exchanging messages over the Internet. It involves two or more individuals that communicate through a chat-enabled service or software.
-</p>
+## Features  
+- **Real-Time Communication**: Powered by **Socket.io**, enabling instant message delivery.  
+- **User Authentication**: Secure login and registration with encrypted passwords.  
+- **Data Storage**: User details are stored securely in an encrypted format using **MongoDB**.  
+- **Responsive Design**: Works seamlessly across desktop and mobile devices.  
+- **User-Friendly Interface**: Intuitive UI for a smooth chatting experience.  
 
+## Technologies Used  
+### Frontend  
+- React  
+- Redux (for state management)  
+- CSS/Tailwind CSS/Material UI/ Chakra Ui
 
-<p>
-Chat Application is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
-</p>
+### Backend  
+- Node.js  
+- Express.js  
+- Socket.io (for real-time communication)  
 
-## Tech-Stack
+### Database  
+- MongoDB  
 
----
+### Others  
+- JWT for user authentication  
+- Bcrypt for password hashing  
 
-**Client:** React JS
+## Installation  
 
-**Server:** Node JS, Express JS
+### Prerequisites  
+- Node.js (v14+ recommended)  
+- MongoDB (local or cloud instance)  
 
-**Database:** Mongo DB
+### Steps to Run Locally  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/chat-application.git
 
-## Features
+2. Set up environment variables:
+   ```bash
+   NODE_ENV=development
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret  
 
----
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Sathish14325/ChatNest.git
-```
-
-Go to the project directory
-
-```bash
-  cd MERN-CHAT-APP
-```
-
-Install dependencies
-
-```bash
-  cd client/
-  npm install
-```
-
-```bash
-  cd server/
-  npm install
-```
-
-Start the server
-
-```bash
-  cd server/
-  npm run dev
-```
-Start the Client
-
-```bash
-  cd client/
+3. Start the development server:
+  ```bash
+  npm run server
+  cd client  
   npm start
-```
-
-## Made By
-
-- [@SATHISH](https://github.com/sathish14325)
 
 
